@@ -1,7 +1,7 @@
 # Core Subgraph selection algorithm
 # Author: Hamed Sarvari
 # Input:  1- Matrix of weighted tau correlation among different outlier score rankings. (Can be obtained by WeightedTau.py script)
-#         2- Number of edges withheld while pruning the graph. Usually set to equal to number of nodes in graph
+#         2- Number of edges withheld while pruning the graph. Usually set equal to number of nodes in graph
 # Output:  Index of selected rankings
 #################################################################################################
 library(igraph)
