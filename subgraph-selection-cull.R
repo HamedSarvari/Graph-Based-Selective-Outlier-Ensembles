@@ -1,10 +1,10 @@
 # Cull Subgraph selection algorithm
+# Author: Hamed Sarvari
 # Input: 1- Adjacency matrix of weighted tau correlation among different outlier score rankings
-#        2- Number of edges withheld while pruning the graph. Ususally set to equal to number of nodes in graph
-#        3- Drop rate: percentage of nodes to withhold. Ususally set to 20 percent
-# Output Index of selected rankings
+#        2- Number of edges withheld while pruning the graph. Usually set equal to the number of nodes in graph.
+#        3- Drop rate: percentage of nodes to discard. Usually set to 20 percent of number of the nodes.
+# Output: Index of selected rankings
 #################################################################################################
-args<-commandArgs(TRUE)
 library(igraph)
 library(Matrix)
 

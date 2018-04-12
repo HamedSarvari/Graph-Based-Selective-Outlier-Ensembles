@@ -7,7 +7,6 @@
 library(igraph)
 library(Matrix)
 
-
 Core_Subgraph_selection <- function(adj_file,num_selected_edges_graph){
   
   Adj_matrix = read.csv(adj_file,header=FALSE)
@@ -23,7 +22,6 @@ Core_Subgraph_selection <- function(adj_file,num_selected_edges_graph){
   kcore <- induced.subgraph(graph=g5,vids=verticesHavingMaxCoreness)
   ret<-V(kcore)
   return(strtoi(substr(ret$name,2,length(ret$name))))
-
   }
 
 

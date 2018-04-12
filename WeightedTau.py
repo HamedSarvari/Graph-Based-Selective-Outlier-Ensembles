@@ -1,10 +1,10 @@
-# Builds matrix of pairwise weighted tau correlation for an ensemble of outlier score rankings
-# Author: Hamed Sarvari
+# Builds matrix of pairwise weighted kendall tau correlations for an ensemble of outlier score rankings
+# https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.weightedtau.html
 # Function Write_Wtau
 # Input: 1- n*m matrix of outlier score rankings.(n data points and m ensemble components)
-# Each column represents scores of one of ensemble components - rows are different data points
+# Each column represents scores of one ensemble component - rows are different data points
 #        2- Full address of output file e.g.:  '/home/user/out.csv'
-# Writes to file a m*m matrix of pairwise weighted tau correlations
+# Writes a m*m matrix of pairwise weighted tau correlations
 
 ################################################################################################
 import numpy as np
