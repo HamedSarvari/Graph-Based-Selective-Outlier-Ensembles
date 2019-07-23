@@ -21,7 +21,7 @@ Core_Subgraph_selection <- function(adj_file,num_selected_edges_graph){
   verticesHavingMaxCoreness <- which(coreness == maxCoreness)
   kcore <- induced.subgraph(graph=g5,vids=verticesHavingMaxCoreness)
   ret<-V(kcore)
-  return(strtoi(substr(ret$name,2,length(ret$name))))
+  return(verticesHavingMaxCoreness)
   }
 
 
